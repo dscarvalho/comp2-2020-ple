@@ -24,6 +24,6 @@ public class Divisores {
     }
  
     public static void main (String[] args) {
-        imprimirDivisores(35);
+        imprimirDivisores(45);
     }
 }
