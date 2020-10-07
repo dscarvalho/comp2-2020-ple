@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+  <meta content="utf-8" http-equiv="encoding">
+  <title>Gráfico COVID-19</title>
+
+  <style type="text/css">
+    body, html {
+      font-family: sans-serif;
+    }
+  </style>
+
+<script type="text/javascript" src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+<link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h2>Gráfico COVID-19</h2>
+<br />
+<div id="visualization"></div>
+
+<script type="text/javascript">
+
+    var container = document.getElementById('visualization');
+
+    var groups = new vis.DataSet([
+            {id: "Casos", content: "Casos"},
+            {id: "Mortes", content: "Mortes"}
+        ]
+    );
+
+    var items = [
+        :items:
+    ];
+
+    var dataset = new vis.DataSet(items);
+    var options = {
+        start: :data_inicio:,
+        end: :data_fim:,
+        legend: true,
+        locale: 'pt-br'
+    };
+  var graph2d = new vis.Graph2d(container, dataset, groups, options);
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package br.ufrj.dcc.comp2.ple.aula_danilo.exemplos.excecoes;
+package br.ufrj.dcc.comp2.ple.aula_danilo.lab1.excecoes;
 import java.util.Scanner;
  
  /** Introduz exceções através de um erro simples de execução.

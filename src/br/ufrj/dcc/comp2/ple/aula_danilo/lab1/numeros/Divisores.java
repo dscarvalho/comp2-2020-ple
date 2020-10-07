@@ -1,4 +1,7 @@
-package br.ufrj.dcc.comp2.ple.aula_danilo.exemplos.numeros;
+package br.ufrj.dcc.comp2.ple.aula_danilo.lab1.numeros;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 /** Classe para calcular divisores de um número.
  * @author Danilo Carvalho &lt;danilosc@dcc.ufrj.br&gt;
@@ -15,7 +18,7 @@ public class Divisores {
      * @param numero Número do qual os divisores serão calculados.
      * 
      */
-    public static void imprimirDivisores(int numero) {
+    public static void imprimirDivisores(double numero) {
         for(int i=1; i <= numero; i++) {
             if(numero % i == 0) {
                 System.out.println(i);
@@ -24,6 +27,21 @@ public class Divisores {
     }
  
     public static void main (String[] args) {
-        imprimirDivisores(45);
+    	Scanner scanner = new Scanner(System.in);
+    	double numero = Double.NEGATIVE_INFINITY;
+    	
+    	
+    	while (numero < 0) {
+    		System.out.println("Digite um número positivo.");
+    		if (scanner.hasNextDouble()) {
+    			numero = scanner.nextDouble();
+    		}
+    		else {
+    			System.out.println("O número digitado não é válido. Digite números positivos.");
+    			scanner.nextLine();
+    		}
+    	}
+    	
+        imprimirDivisores(numero);
     }
 }
