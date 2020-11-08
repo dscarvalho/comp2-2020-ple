@@ -50,7 +50,6 @@ public class PrimeiroServlet extends HttpServlet {
 		String senha = request.getParameter("senha");
 		response.setHeader("Content-Type", "application/json");
 		response.getWriter().printf("{\"nome\": \"%s\", \"sobrenome\": \"%s\"}", nome, senha);
-		request.pa
 	}
 	
 	

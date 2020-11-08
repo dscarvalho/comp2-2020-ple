@@ -1,0 +1,8 @@
+[
+	{"nome": "Hamburguer", "valor": 20.00},
+	{"nome": "Fritas", "valor": 10.00},
+	{"nome": "Pizza", "valor": 40.00},
+	{"nome": "Salgadinho", "valor": 10.00, "desconto": 2.00},
+	{"nome": "Suco", "valor": 7.00},
+	{"nome": "Refrigerante", "valor": 6.00, "desconto": 1.50}
+]
